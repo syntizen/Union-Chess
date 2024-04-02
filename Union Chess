@@ -1,0 +1,37 @@
+class ChessPiece:
+    def __init__(self, name, color):
+        self.name = name
+        self.color = color
+
+    def __str__(self):
+        return f"{self.color[0]}{self.name[0]}"
+
+class ChessGame:
+    def __init__(self):
+        self.board = self.create_board()
+
+    def create_board(self):
+        # Initialize a 16x24 board with empty spaces
+        board = [[None for _ in range(24)] for _ in range(16)]
+
+        # Setup pieces for White
+        white_pieces_order = ["Rook", "Knight", "Bishop", "Queen", "King", "Bishop", "Knight", "Rook"] * 3
+        for i in range(24):
+            board[1][i] = ChessPiece("Pawn", "White")
+            board[0][i] = ChessPiece(white_pieces_order[i], "White")
+
+        # Setup pieces for Black
+        black_pieces_order = list(reversed(white_pieces_order))
+        for i in range(24):
+            board[14][i] = ChessPiece("Pawn", "Black")
+            board[15][i] = ChessPiece(black_pieces_order[i], "Black")
+
+        return board
+
+    def print_board(self):
+        for row in self.board:
+            print(" ".join(str(piece) if piece else '.' for piece in row))
+
+# Create a new game and print the board
+game = ChessGame()
+game.print_board()
