@@ -3,7 +3,7 @@
 An ambitious, high-performance tactical chess variant played on a massive 16x24 grid. The game combines **three complete sets of traditional chess pieces** lined up side-by-side, giving each team a colossal starting vanguard. It features a custom-built, threat-aware vector-matrix AI engine that executes tactical multi-move formations in real time.
 
 <p align="center">
-  <video src="gameplay.gif?v=2" width="750" autoplay loop muted playsinline></video>
+  <video src="gameplay.gif" width="750" autoplay loop muted playsinline></video>
 </p>
 
 ---
