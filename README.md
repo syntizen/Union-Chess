@@ -1,6 +1,6 @@
 # ⚔️ Union Chess Matrix (v5.0)
 
-An ambitious, high-performance tactical chess variant played on a massive 16x24 grid. The game combines **three complete sets of traditional chess pieces** lined up side-by-side, giving each team a colossal starting vanguard. It features a custom-built, threat-aware vector-matrix AI engine that executes tactical multi-move formations in real time.
+A tactical chess variant played on a massive 16x24 grid. The game combines **three complete sets of traditional chess pieces** lined up side-by-side, giving each team a colossal starting vanguard. It features a custom-built, threat-aware vector-matrix AI engine that executes tactical multi-move formations in real time.
 
 <p align="center">
 
