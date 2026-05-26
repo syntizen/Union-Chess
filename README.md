@@ -10,7 +10,7 @@ An ambitious, high-performance tactical chess variant played on a massive 16x24 
 
 ---
 
-## 🚀 Innovative Variant Mechanics
+## 🚀 Variant Mechanics
 
 - **Multi-Action Strategic Turns:** Each team controls up to **3 individual piece movements per turn** before passing control over to the opponent.
 - **Piece-Locking Regulation:** To ensure true strategic diversity, every individual piece is restricted to moving exactly **1 time per turn**. The AI cannot "double-dip" an overpowered piece to sweep a row.
@@ -20,7 +20,7 @@ An ambitious, high-performance tactical chess variant played on a massive 16x24 
 
 ---
 
-## 📏 Custom Board Layout & Initial Thrust Rules
+## 📏 Board Layout & Initial Thrust Rules
 
 Traditional piece orders are multiplied by three and aligned on a 16x24 board grid. To prevent immediate bottleneck locks caused by the dense double-pawn lines, custom initialization movement rules apply:
 - **Layer 1 Pawns (Ranks 1 & 14):** Permitted to execute a massive initial **3-square leap** forward if the path is clear.
@@ -28,7 +28,7 @@ Traditional piece orders are multiplied by three and aligned on a 16x24 board gr
 
 ---
 
-## 🧠 Smart AI Engine Architecture
+## 🧠 AI Engine Architecture
 
 Unlike basic chess variants that rely on heavy object deep-copying, the **Mastermind Matrix Engine** evaluates prospective paths **in-place** using matrix arithmetic. This design avoids python memory leaks, rendering matches smoothly over hundreds of turns.
 
